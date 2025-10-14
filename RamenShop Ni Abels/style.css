@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffaf3;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Full page hero section */
+.hero {
+  height: 100vh;
+  background: url('https://www.tastingtable.com/img/gallery/ichiran-the-japanese-ramen-restaurant-that-is-every-introverts-dream/l-intro-1680800206.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero div {
+  position: relative;
+  z-index: 2;
+}
+
+.full-page-section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+/* Product Cards */
+.ramen-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.ramen-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.ramen-img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+.ramen-card:hover .ramen-img {
+  transform: scale(1.08);
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  transition: 0.3s;
+}
+.btn-warning:hover {
+  background-color: #ff9800;
+  transform: scale(1.05);
+}
+
+/* Glowing hover effect */
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+}
+
+footer {
+  width: 100%;
+}
